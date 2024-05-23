@@ -7,11 +7,11 @@
 ## 目录介绍
 
 ```
-- typora-aliothstar-theme # 主题文件夹
--- assets # 资源文件夹
+- typora-aliothstar-theme 
+-- aliothstar # 主题文件夹
 --- css # 样式文件夹
 --- fonts # 字体文件
--- theme.css # 主题样式文件
-- aliothstar.css # 总样式入口文件
+--- theme.css # 主题样式文件
+-- aliothstar.css # 总样式入口文件
 ```
 
