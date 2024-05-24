@@ -1,0 +1,83 @@
+/* 图片样式 */
+
+img {
+  border-radius: var(--image-radius);
+  border: none;
+  /* 设置最大宽度 */
+  max-width: var(--image-max-width);
+  box-shadow: var(--image-shadow);
+  transition: all 0.4s ease;
+}
+
+.md-image:hover img {
+  transform: scale(var(--hover-image-bigger-multiple));
+}
+
+/* 图片链接前图标 */
+.md-focus .md-img-error > .md-meta:first-of-type:before,
+.md-image > .md-meta:first-of-type:before {
+  top: -2.5px;
+}
+
+/* 图片链接文字 */
+.md-image > .md-meta {
+  font-family: "HarmonyOS_Sans_SC_Thin";
+  border-radius: 3px;
+  padding: 2px 0 0 4px;
+  margin: 30px 0;
+  font-size: var(--image-link-text-size);
+  color: var(--image-link-text-color);
+}
+
+/* 图片报错提示图标 */
+.md-img-error > .md-meta:first-of-type:before {
+  color: var(--error-image-link-text-icon-color);
+  font-size: 1.5rem;
+}
+
+/* 图片报错 */
+.md-img-error > .md-meta {
+  display: inline;
+  padding-bottom: 1px;
+  border-bottom: var(--error-image-link-underline);
+  border-radius: 0px !important;
+  color: var(--error-image-link-text-icon-color);
+}
+
+/* 图片报错，链接文本加粗 */
+.md-img-error .md-image-before-src.ty-focusable,
+.md-img-error .md-image-src-span.ty-focusable,
+.md-img-error .md-image-after-src {
+  font-weight: bolder;
+}
+
+/* 图片加载失败，悬浮提示框 */
+.md-image > .md-show-hint:after {
+  color: var(--hover-error-image-tipsBox-text-color) !important;
+  border-radius: 3px;
+  background-color: var(--hover-error-image-tipsBox-bg-color);
+  opacity: 1;
+}
+
+p > .md-img-loaded {
+  position: relative;
+}
+
+/* 图片编号格 */
+#write {
+  counter-reset: imgNum;
+}
+
+#write p > .md-image:not(.md-img-error)::after {
+  content: "图片 " counter(imgNum) "  " attr(alt) !important;
+}
+
+#write p > .md-image:not(.md-img-error)::after {
+  counter-increment: imgNum;
+  text-align: center;
+  width: 100%;
+  margin-top: 10px;
+  display: inline-block;
+  font-size: 12px;
+  font-family: "HarmonyOS_Sans_SC_Thin";
+}
