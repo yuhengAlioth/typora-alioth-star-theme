@@ -1,0 +1,111 @@
+/* 标题设置 */
+
+/* ======= 一级标题 ======= */
+#write h1 {
+  font-size: var(--h1-size);
+  color: var(--h1-color);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* ======= 二级标题 ======= */
+#write h2 {
+  font-family: var(--all-topic-font);
+  font-size: var(--h2-size);
+  color: var(--h2-color);
+  line-height: 1.6;
+  width: fit-content;
+  font-weight: bold;
+  margin: 14px 0;
+  padding: 1px 20px;
+  border-radius: 50px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 70px;
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 0px;
+  background: linear-gradient(
+    to right,
+    var(--h2-bg-color),
+    var(--h2-bg-color2)
+  );
+  background-size: 200% 100%;
+  background-position: 0% 0%;
+  transition: all ease-in-out 0.1s;
+}
+#write h2:hover {
+  background-position: -100% -100%;
+  transition: all ease-in-out 0.1s;
+}
+
+/* ======= 三级标题 ======= */
+#write h3 {
+  font-size: var(--h3-size);
+  color: var(--h3-color);
+  text-align: left;
+  margin: 16px 0;
+  padding-left: 10px;
+  border-left: 5px solid var(--h3-border-color);
+}
+/* 三级标题内容 */
+#write h3 span {
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--h3-border-color);
+}
+
+/* ======= 四级标题 ======= */
+#write h4 {
+  font-size: var(--h4-size);
+  color: var(--h4-color);
+  text-align: left;
+  margin: 18px 0;
+}
+#write h4::before {
+  content: "";
+  margin-left: 12px;
+  margin-right: 5px;
+  display: inline-block;
+  background-color: var(--h4-bg-color);
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  border: 1px solid var(--h4-border-color);
+  vertical-align: inherit;
+}
+
+/* ======= 五级标题 ====== */
+#write h5 {
+  font-size: var(--h5-size);
+  color: var(--h5-color);
+  text-align: left;
+  margin: 20px 0;
+}
+
+#write h5::before {
+  content: "";
+  margin-left: 14px;
+  margin-right: 5px;
+  display: inline-block;
+  background-color: var(--h5-bg-color);
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  border: 2px solid var(--h5-border-color);
+  vertical-align: inherit;
+}
+
+/* ======= 六级标题 ======= */
+#write h6 {
+  font-size: var(--h6-size);
+  color: var(--h6-color);
+  text-align: left;
+  margin: 22px 0;
+}
+
+#write h6::before {
+  content: "-";
+  color: var(--h6-border-color);
+  margin-left: 16px;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: inherit;
+}
