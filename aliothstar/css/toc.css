@@ -1,0 +1,103 @@
+/*正文区域目录 */
+
+/* ======= 正文目录工具栏 ======= */
+#write .md-toc .md-toc-tooltip,
+#write .md-toc:focus .md-toc-tooltip {
+  background-color: transparent;
+}
+
+#write .md-toc .md-toc-tooltip {
+  border: none;
+}
+
+/* 目录删除图标设置 */
+.md-toc:focus .md-toc-tooltip .ty-delete:hover {
+  color: var(--hover-toolbar-right-delete-icon-color);
+  transition: all 0.3s ease;
+}
+
+/* ======= 目录主体 ======= */
+.md-toc * {
+  font-family: var(--contents-toc-text-font);
+}
+
+.md-toc {
+  padding: 20px 0;
+  margin: 30px 0px;
+  background-color: var(--contents-toc-bg-color);
+  border: 2px solid var(--contents-toc-border-color);
+  border-radius: 5px;
+}
+
+/* 消除自带的"目录"二字 */
+.md-tooltip-hide > span {
+  display: none;
+}
+
+/* 自定义"目录"二字 */
+.md-toc:before {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--contents-toc-text-color);
+  content: "目录";
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+
+/* 目录缩进 */
+.md-toc .md-toc-content .md-toc-h1 {
+  margin-top: 10px;
+}
+.md-toc-content .md-toc-inner {
+  margin-left: 0em;
+}
+
+/* 目录标题悬浮底色 */
+#write a.md-toc-inner:hover {
+  color: var(--contents-toc-a-color);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* 增大正文目录的点击范围 */
+#write :is(.md-toc-h1, .md-toc-h1:hover) .md-toc-inner {
+  border-right: var(--contents-toc-h1-click-right-border-width) solid
+    transparent;
+}
+#write :is(.md-toc-h2, .md-toc-h2:hover) .md-toc-inner {
+  border-right: var(--contents-toc-h2-click-right-border-width) solid
+    transparent;
+}
+#write :is(.md-toc-h3, .md-toc-h3:hover) .md-toc-inner {
+  border-right: var(--contents-toc-h3-click-right-border-width) solid
+    transparent;
+}
+#write :is(.md-toc-h4, .md-toc-h4:hover) .md-toc-inner {
+  border-right: var(--contents-toc-h4-click-right-border-width) solid
+    transparent;
+}
+#write :is(.md-toc-h5, .md-toc-h5:hover) .md-toc-inner {
+  border-right: var(--contents-toc-h5-click-right-border-width) solid
+    transparent;
+}
+#write :is(.md-toc-h6, .md-toc-h6:hover) .md-toc-inner {
+  border-right: var(--contents-toc-h6-click-right-border-width) solid
+    transparent;
+}
+
+/* 正文目录悬浮底色 */
+#write
+  :is(
+    .md-toc-h1,
+    .md-toc-h2,
+    .md-toc-h3,
+    .md-toc-h4,
+    .md-toc-h5,
+    .md-toc-h6
+  ):hover {
+  background-color: var(--hover-contents-toc-headline-bg-color);
+  border-radius: 3px;
+  transition: background-color 0.4s ease;
+}
