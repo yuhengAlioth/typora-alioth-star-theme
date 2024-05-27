@@ -1,0 +1,142 @@
+/* 字体设置 */
+
+/* ====== 标题文本大小 ====== */
+:root {
+  --h1-size: 2rem;
+  --h2-size: 1.8rem;
+  --h3-size: 1.6rem;
+  --h4-size: 1.4rem;
+  --h5-size: 1.2rem;
+  --h6-size: 1rem;
+}
+
+/* ====== 标题字体设置 ======= */
+:root {
+  /* 标题字体 */
+  --all-topic-font: "HarmonyOS_Sans_SC_Bold";
+  /* 标题文本字距 */
+  --topic-text-letter-space: 2px;
+}
+
+/* ======= 链接样式 ======= */
+:root {
+  /* 链接文本大小 */
+  --link-text-size: inherit;
+  /* 链接文本字重 */
+  --link-text-font-weight: normal;
+  /* icon 大小 */
+  --link-text-tail-icon-size: 70%;
+  /* icon 透明度，范围：0 ~ 1 */
+  --link-text-tail-icon-opacity: 0.7;
+}
+
+/* ======= 写作区域 ======= */
+:root {
+  /* 界面写作区域文本字体 */
+  --CompileRegion-text-font: "HarmonyOS_Sans_TC_Regular";
+  /* 界面写作区域文本大小 */
+  --CompileRegion-text-size: 16px;
+  /* 界面写作区域文本行间距 */
+  --CompileRegion-text-line-spacing: 1.6rem;
+  /* 界面写作区域文本段间距，用 margin-bottom 实现 */
+  --CompileRegion-text-paragraph-spacing: 1.2rem;
+  /* 界面写作区域文本对齐方式，justify —— 两端对齐，initial —— 默认值，应该是左对齐 */
+  --CompileRegion-text-align-style: initial;
+  /* 界面写作区域默认宽度 */
+  --CompileRegion-default-width: 1000px;
+}
+
+/* ======= 正文目录 ======= */
+:root {
+  --contents-toc-text-font: "HarmonyOS_Sans_SC_Regular";
+  /* 标题右侧透明边框，扩大可点击范围 */
+  --contents-toc-h1-click-right-border-width: 370px;
+  --contents-toc-h2-click-right-border-width: 400px;
+  --contents-toc-h3-click-right-border-width: 320px;
+  --contents-toc-h4-click-right-border-width: 300px;
+  --contents-toc-h5-click-right-border-width: 250px;
+  --contents-toc-h6-click-right-border-width: 220px;
+}
+
+/* ======= 图片 ======= */
+:root {
+  /* 图片最大宽度 */
+  --image-max-width: 75%;
+  /* 图片圆角 */
+  --image-radius: 5px;
+  /* 鼠标悬浮在图片上，图片放大倍数 */
+  --hover-image-bigger-multiple: 1.02;
+  /* 图片链接文本大小 */
+  --image-link-text-size: 1rem;
+}
+
+/* ======= 代码块 ======= */
+:root {
+  /* 代码块字体 */
+  --code-block-text-font: Cascadia_Code_SC_PL, HarmonyOS_Sans_SC_Thin;
+  /* 代码语言输入框文本大小 */
+  --code-lang-input-box-text-size: 15px;
+  /* 代码语言侯选框文本大小 */
+  --code-lang-selection-box-text-size: 14px;
+  /* 代码块顶栏左侧编程语言文本大小 */
+  --code-block-topBar-right-program-lang-size: 15px;
+  /* 代码块顶栏左侧编程语言文本上下位置 */
+  --code-block-topBar-right-program-lang-top-position: -24px;
+  /* 代码块顶栏左侧编程语言文本左右位置 */
+  --code-block-topBar-right-program-lang-right-position: 8px;
+  /* 代码块左侧编程语言文本大小 */
+  --code-block-right-program-lang-text-size: 12px;
+  /* 代码块左侧编程语言文本上下位置*/
+  --code-block-right-program-lang-top-position: 0;
+  /* 代码块左侧编程语言文本左右位置 */
+  --code-block-right-program-lang-right-position: 3px;
+  /* 代码块文本大小 */
+  --code-block-text-size: calc(var(--CompileRegion-text-size) - 1px);
+  /* 代码块文本行高 */
+  --code-block-text-line-height: 1.3rem;
+  /* 代码块边框 */
+  --code-block-border: none;
+  /* 代码块背景圆角 */
+  --code-block-bg-radius: 5px;
+  /* 代码块行号文本对齐方式 */
+  --code-block-line-number-align-style: right;
+  /* 代码块行号文本右侧竖线 */
+  --code-block-line-number-right-border: 1.5px solid transparent;
+  /* 代码语言输入框、选择框宽度 */
+  --code-lang-input-selection-box-width: 205px;
+  /* 代码语言侯选框最大高度 */
+  --code-lang-selection-box-max-height: 250px;
+  /* 代码块最大高度，用于代码块滚动显示，开启 —— 50vh，关闭 —— initial */
+  --code-block-max-height: 60vh;
+  /* 是否开启代码块任意行横向滚动，是 —— pre，否 —— normal  */
+  --code-block-lines-horizontal-white-space: normal;
+  --code-block-lines-horizontal-overflow-x: auto;
+}
+
+/* ======= 滚动条 ======= */
+:root {
+  /* 默认滚动块圆角 */
+  --default-scroll-thumb-radius: 4px;
+  /* 默认滚动块宽度 */
+  --default-scroll-thumb-width: 6px;
+  /* 默认滚动块高度 */
+  --default-scroll-thumb-height: 6px;
+  /* 写作区域  */
+  --CompileRegion-scroll-thumb-width: 6px;
+  /* 侧边栏 */
+  --sidebar-scroll-thumb-width: 6px;
+  /* 侧边栏底部横向滚动块高度 */
+  --sidebar-bottom-scroll-thumb-height: 6px;
+  /* 代码块右侧竖向滚动块宽度 */
+  --code-block-scroll-thumb-width: 5px;
+  /* 代码块行横向滚动块高度 */
+  --code-block-line-scroll-thumb-height: 5px;
+  /* 代码块语言选择框 */
+  --code-lang-selection-box-scroll-thumb-width: 6px;
+  /* 底部栏拼写检查栏检查语言选择区域 */
+  --spell-check-panel-lang-list-scroll-thumb-width: 5px;
+  /* 表格 */
+  --table-scroll-thumb-width: 6px;
+  /* 表格底部横向滚动块高度 */
+  --table-bottom-scroll-thumb-height: 6px;
+}
