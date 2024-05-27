@@ -1,0 +1,182 @@
+/* 颜色设置 */
+
+/* ======= 标题文本颜色 ======= */
+:root {
+  --h1-color: #ff5f91;
+  --h2-color: #21072a;
+  --h3-color: #21072a;
+  --h4-color: #21072a;
+  --h5-color: #21072a;
+  --h6-color: #21072a;
+}
+
+/* ======= 标题背景颜色 ======= */
+:root {
+  /* --h1-bg-color: #f3f0ff; */
+  --h2-bg-color: #55bb8b;
+  --h2-bg-color2: #42b349;
+  --h3-bg-color: #d9c6f9;
+  --h4-bg-color: #55bb8b;
+  --h5-bg-color: #ffffff;
+  --h6-bg-color: #e96900;
+}
+
+/* ======= 标题边框颜色 ======= */
+:root {
+  --h3-border-color: #42b349;
+  --h4-border-color: #42b349;
+  --h5-border-color: #42b349;
+  --h6-border-color: #42b349;
+}
+
+/* ======= 链接颜色 ======= */
+:root {
+  /* 链接文本颜色 */
+  --link-text-color: #66cbff;
+  /* 鼠标悬浮在链接上，文本颜色 */
+  --hover-link-text-color: #8e7cd6;
+  /* 鼠标悬浮在链接上，链接尾部 icon 颜色 */
+  --hover-link-tail-icon-color: #8e7cd6;
+  /* 链接尾部 icon 颜色 */
+  --link-text-tail-icon-color: #8e7cd6;
+  /* 链接 hover 样式 —— 线移动（左 ——> 右） */
+  /* 链接底部线条开始颜色 */
+  --hover-link-bottom-line-start-color: #66cbff;
+  /* 链接底部线条结束颜色 */
+  --hover-link-bottom-line-end-color: #8e7cd6;
+  /* 链接文本颜色 */
+  --hover-link-bg-text-color: #fff;
+  /* 访问过的链接文本颜色 */
+  --link-visited-text-color: #e58a89;
+}
+
+/* ======= 写作区域 ======= */
+:root {
+  /* 界面默认背景颜色 */
+  --interface-default-bg-color: #c7eecf;
+  /* 界面写作区域文本颜色 */
+  --CompileRegion-text-color: #3a3a56;
+  /* 界面写作区域选中文本颜色 */
+  --CompileRegion-selected-text-color: #faf4dc;
+  /* 界面写作区域选中文本背景颜色 */
+  --CompileRegion-selected-text-bg-color: #b1cf87;
+}
+
+/* ======= 正文目录 ======= */
+:root {
+  --contents-toc-text-color: #252831;
+  --contents-toc-a-color: #ef82a1;
+  --contents-toc-bg-color: #e9f0f6;
+  --contents-toc-border-color: #ff5f91;
+  --hover-toolbar-right-delete-icon-color: #ec261b;
+  --hover-contents-toc-headline-bg-color: #f3f2f8;
+}
+
+/* ======= 图片 ======= */
+:root {
+  /* 图片阴影 */
+  --image-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  /* 图片链接文本颜色 */
+  --image-link-text-color: #7caad2;
+  /* 图片不显示，文本和图标颜色 */
+  --error-image-link-text-icon-color: #f44336;
+  /* 图片不显示，链接下划线，用 border-bottom 实现 */
+  --error-image-link-underline: 2.5px #f44336 solid;
+  /* 图片不显示，鼠标悬浮提示框背景色 */
+  --hover-error-image-tipsBox-bg-color: #fff;
+  /* 图片不显示，鼠标悬浮提示框文本颜色 */
+  --hover-error-image-tipsBox-text-color: #f44336;
+}
+
+/* ======= 零散配置 ======= */
+:root {
+  --hr-border-color: #ff5f91;
+  --em-color: #282955;
+  --mark-color: #8e7cd6;
+  --mark-bg-color: #b2bcbe;
+  --strong-color: #282955;
+  --em-strong-color: #b2bcbe;
+  --del-color: #ec261b;
+  --blockquote-border-color: #b2bcbe;
+  --blockquote-border-left-color: #42b349;
+  --blockquote-p-color: #21072a;
+  --p-code-color: #ec261b;
+  --p-code-bg-color: #e8d7df;
+  --li-code-color: #8f8f91;
+  --footnote-color: #515257;
+}
+
+/* ======= 列表 ======= */
+:root {
+  --marker-color: #626161;
+  --li-section-color: #000000;
+  --li-before-color: #d6d6d6;
+}
+
+/* ======= 任务列表 ======= */
+:root {
+  --task-list-color: #7f68c3;
+  --task-list-bg-color: #fff;
+  --task-list-border-color: #44b144;
+}
+
+/* ======= 代码块 ======= */
+:root {
+  /* 代码块背景色 */
+  --code-block-bg-color: #edf5f9 !important;
+  /* 代码块阴影 */
+  --code-block-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  /* 代码块内，光标所在行的光标样式，用 border-left 实现 */
+  --focus-code-line-cursor-style: 3px solid #635282 !important;
+  /* 代码块内，光标所在行背景色 */
+  --focus-code-line-bg-color: rgb(228, 235, 238, 0.4);
+  /* 代码块行号文本颜色 */
+  --code-block-line-number-color: #16a3d1;
+  /* 代码语言输入框、选择框背景色 */
+  --code-lang-input-selection-box-bg-color: #fff;
+  /* 代码语言输入框文本颜色 */
+  --code-lang-input-box-text-color: #956aba;
+  /* 代码块语言输入框默认提示文本 */
+  --code-lang-input-box-prompt-text-color: rgb(44, 116, 199, 0.6);
+  /* 鼠标悬浮在语言侯选框列表，该列表文本颜色 */
+  --hover-lang-selection-box-li-text-color: #7aabef;
+  /* 鼠标悬浮在语言侯选框列表，该列表背景色 */
+  --hover-lang-selection-box-li-bg-color: #d5dfea;
+  /* 代码块顶栏左侧编程语言文本颜色 */
+  --code-block-topBar-right-program-lang-color: #8774f4;
+  /* 代码块左侧编程语言文本颜色 */
+  --code-block-right-program-lang-text-color: #8f8f91;
+  /* 代码块顶栏，border-top 实现 */
+  --code-block-top-bar: 25px solid rgb(167, 187, 195, 0.5);
+}
+
+/* ======= 表格 ======= */
+:root {
+  --table-border-color: #27152b;
+  --table-tr-border-color: #d8e3e7;
+  --table-bg-color: #95be96;
+  --table-th-border-color: #c8b9fa;
+  --table-td-border-color: #c8b9fa;
+}
+
+/* ====== 滚动条 ======= */
+:root {
+  /* 写作区域 */
+  --CompileRegion-scroll-thumb-color: #66cbff;
+  /* 鼠标悬浮 / 按在滚动块上，滚动块颜色 */
+  --hover-CompileRegion-scroll-thumb-color: #1781b5;
+  /* 侧边栏 */
+  --sidebar-scroll-thumb-color: #61b2dd;
+  --hover-sidebar-scroll-thumb-color: #7cc3fb;
+  /* 代码块 */
+  --code-block-scroll-thumb-color: #d2dbe3;
+  --hover-code-block-scroll-box-color: #aaa;
+  --code-lang-selection-box-scroll-thumb-color: #ccc;
+  --hover-code-lang-selection-box-scroll-box-color: #aaa;
+  /* 表格 */
+  --table-scroll-thumb-color: rgb(192, 211, 211, 0.75);
+  --hover-table-scroll-thumb-color: rgb(163, 187, 187, 0.75);
+  /* 底部栏 */
+  --spell-check-panel-lang-list-scroll-thumb-color: #ccc;
+  --hover--spell-check-panel-lang-list-scroll-box-color: #aaa;
+}
