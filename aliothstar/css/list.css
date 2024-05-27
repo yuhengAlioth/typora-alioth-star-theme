@@ -1,0 +1,57 @@
+/* 列表样式 */
+
+::marker {
+  color: var(--marker-color);
+}
+
+li.md-list-item {
+  margin: 0.4rem 0;
+}
+
+#write ul,
+#write ol {
+  margin-top: 0px;
+  margin-left: 16px;
+  margin-bottom: 8px;
+  padding-left: 13px;
+}
+
+#write ul {
+  list-style-type: disc;
+}
+
+#write ul ul {
+  list-style-type: circle;
+}
+
+#write ul ul ul {
+  list-style-type: square;
+}
+
+#write ol {
+  list-style-type: decimal;
+}
+#write ol ol {
+  list-style-type: lower-alpha;
+}
+#write ol ol ol {
+  list-style-type: lower-roman;
+}
+
+#write li section {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  line-height: 1.7rem;
+  text-align: justify;
+  color: var(--li-section-color);
+  font-weight: 500;
+}
+
+#write li:before {
+  content: "";
+  height: calc(100% - 34px);
+  top: 34px;
+  position: absolute;
+  border-left: 0.5px solid var(--li-before-color);
+  left: -14px;
+}
