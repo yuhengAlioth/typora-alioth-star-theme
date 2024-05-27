@@ -1,0 +1,58 @@
+/* 字体定义 */
+
+/* ======= 中文字体 ======= */
+
+/* 目录模块 */
+@font-face {
+  font-family: "HarmonyOS_Sans_SC_Regular";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("aliothstar/fonts/Chinese/HarmonyOS_Sans_SC_Regular.woff2");
+}
+
+/* 侧边栏、右键菜单、底部栏、引用块、代码块、脚注 */
+@font-face {
+  font-family: "HarmonyOS_Sans_SC_Thin";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("aliothstar/fonts/Chinese/HarmonyOS_Sans_SC_Thin.woff2");
+}
+
+/* 标题、加粗 */
+@font-face {
+  font-family: "HarmonyOS_Sans_SC_Bold";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("aliothstar/fonts/Chinese/HarmonyOS_Sans_SC_Bold.woff2");
+}
+
+/* 正文 */
+@font-face {
+  font-family: "HarmonyOS_Sans_TC_Regular";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("aliothstar/fonts/Chinese/HarmonyOS_Sans_TC_Regular.woff2");
+}
+
+/* 标点符号 */
+@font-face {
+  font-family: "HarmonyOS_Sans_TC_Medium";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("aliothstar/fonts/Chinese/HarmonyOS_Sans_TC_Medium.woff2");
+}
+
+/* ======== 英文字体 ======= */
+/* 侧边栏、右键菜单、底部栏、引用块、代码块、脚注 */
+@font-face {
+  font-family: "Cascadia_Code_SC_PL";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("aliothstar/fonts/Eglish/CascadiaCodePL.woff2");
+}
