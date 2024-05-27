@@ -1,0 +1,143 @@
+/* 配置文件 */
+
+/* 颜色设置引用 */
+@import "color-settings.css";
+/* 字体设置引用 */
+@import "font-settings.css";
+
+/* 分隔线*/
+#write hr {
+  margin: 10px 0;
+  padding: 0px;
+  width: 100%;
+  border: none;
+  border-top: 2px dashed var(--hr-border-color);
+}
+
+/* 斜体 */
+#write em {
+  padding: 0 3px 0 0;
+  font-style: italic;
+  color: var(--em-color);
+}
+
+/* 高亮 */
+#write mark {
+  font-weight: bolder;
+  color: var(--mark-color);
+  background: var(--mark-bg-color);
+}
+
+/* 加粗 */
+#write strong {
+  color: var(--strong-color);
+  font-weight: bold;
+}
+
+/* 加粗斜体 */
+#write em strong {
+  color: var(--em-strong-color);
+}
+
+/* 删除线 */
+#write del {
+  color: var(--del-color);
+}
+
+/* 引用 */
+
+#write blockquote {
+  margin-left: 12px;
+  padding: 12px;
+  border: 1px solid var(--blockquote-border-color);
+  border-left-color: var(--blockquote-border-left-color);
+  border-left-width: 4px;
+  border-radius: 4px;
+  line-height: 26px;
+}
+
+#write blockquote p {
+  color: var(--blockquote-p-color);
+}
+
+/* 行内代码 */
+#write p code {
+  padding: 0px 3px 0px 7px;
+  color: var(--p-code-color);
+  background: var(--p-code-bg-color);
+  border-radius: 3px;
+  font-family: Cascadia_Code_SC_PL, HarmonyOS_Sans_SC_Thin;
+  letter-spacing: 0.5px;
+}
+#write li code {
+  color: var(--li-code-color);
+}
+
+/* 脚注文字 */
+#write .footnote-word {
+  font-weight: normal;
+  color: var(--footnote-color);
+}
+
+/* 脚注上标 */
+#write .footnote-ref {
+  font-weight: normal;
+  color: var(--footnote-color);
+}
+
+/*脚注链接样式*/
+#write .footnote-item em {
+  font-size: 14px;
+  color: var(--footnote-color);
+  display: block;
+  background: none;
+}
+
+/* 导出HTML的样式 */
+body.typora-export {
+  padding-left: 0px;
+}
+.typora-export-content .outline-content::before {
+  content: "目录";
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 22px;
+  left: 6px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  z-index: -1;
+}
+
+.typora-export-sidebar .outline-content {
+  height: 100%;
+  padding-left: 15px;
+  border-right: 1px solid #d2d2d2;
+}
+
+.typora-export-content .typora-export-content {
+  padding-left: 0px;
+}
+
+.typora-export-content .outline-expander {
+  width: 0;
+}
+
+.typora-export-content .outline-item-active > .outline-item::after {
+  content: "";
+  position: relative;
+  width: 11px;
+  height: 8px;
+  background: #c7eecf;
+  float: right;
+  right: 5px;
+  top: -14px;
+  z-index: 100;
+  border-radius: 40% 20% 20% 40%;
+}
+.typora-export-content .outline-label {
+  max-width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
