@@ -1,0 +1,30 @@
+/* 主题的入口文件 */
+
+/* 字体引用 */
+@import "./aliothstar/fonts/fonts.css";
+/* 配置文件 */
+@import "./aliothstar/css/configs.css";
+/* 写作区域样式 */
+@import "./aliothstar/css/compile-region.css";
+/* 正文标题样式 */
+@import "./aliothstar/css/title.css";
+/* 链接样式 */
+@import "./aliothstar/css/link.css";
+/* 目录样式 */
+@import "./aliothstar/css/toc.css";
+/* 图片样式 */
+@import "./aliothstar/css/images.css";
+/* 列表样式 */
+@import "./aliothstar/css/list.css";
+/* 任务列表样式 */
+@import "./aliothstar/css/task-list.css";
+/* 代码块样式 */
+@import "./aliothstar/css/code-block.css";
+/* 代码块代码语言列表 */
+@import "./aliothstar/css/code-lang-lists.css";
+/* 表格样式 */
+@import "./aliothstar/css/table.css";
+/* 滚轮样式 */
+@import "./aliothstar/css/scrollbar.css";
+/* pdf导出 */
+@import "./aliothstar/css/pdf.css";
