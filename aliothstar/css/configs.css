@@ -93,6 +93,18 @@
   background: none;
 }
 
+/* 下划线 */
+#write u {
+  background-color: inherit;
+  color: inherit;
+  font-size: inherit;
+  text-decoration: none;
+  /* 下边框模拟下划线 */
+  border-bottom: 2px solid var(--text-underline-color);
+  /* 文本与下边框间距 */
+  padding-bottom: 1.5px;
+}
+
 /* 导出HTML的样式 */
 body.typora-export {
   padding-left: 0px;
