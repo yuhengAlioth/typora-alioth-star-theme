@@ -118,6 +118,10 @@
   --task-list-color: #7f68c3;
   --task-list-bg-color: #fff;
   --task-list-border-color: #44b144;
+  /* 已完成任务列表的文本颜色 */
+  --task-list-checked-text-color: #aaa;
+  /* 引用块内已完成任务列表的文本颜色 */
+  --blockquote-task-list-checked-text-color: #ccc;
 }
 
 /* ======= 代码块 ======= */
